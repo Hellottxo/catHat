@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Document</title>
+  <style>
+    html,
+    body {
+      margin: 0;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    body {
+      flex-direction: column;
+      background-image: linear-gradient(to top, #c1dfc4 0%, #deecdd 100%);
+    }
+
+    button {
+      font-size: 16px;
+      margin-bottom: 16px;
+      background-image: linear-gradient(to top, #0ba360 0%, #3cba92 100%);
+      color: white;
+      border-radius: 40px;
+      padding: 9px 20px;
+      border: none;
+      cursor: pointer;
+      transition: all .8s;
+    }
+
+    button:hover{
+      background-image: linear-gradient(to top, #0ba360db 0%, #3cba92a6 100%);
+    }
+
+    input[type="file" i] {
+      display: none;
+    }
+
+    img, canvas {
+      max-width: 600px;
+      border-radius: 10px;
+    }
+    h1 {
+      color: #0ba360;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>上传图片，给小猫咪戴上帽子～</h1>
+  <div>
+    <input type="file">
+    <button class="upload">选择文件</button>
+    <button class="ware">戴上帽子</button>
+  </div>
+  <div>
+    <img src="./assets/cat.jpeg" id="input" />
+    <canvas id="output" />
+  </div>
+  <script src="index.js"></script>
+  <script async src="./assets/opencv.js"></script>
+</body>
+
+</html>
