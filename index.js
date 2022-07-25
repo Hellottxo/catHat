@@ -80,7 +80,7 @@ const checkIsTransparent = (texturePixi) => texturePixi[0] === 0 && texturePixi[
 const Module = {
   locateFile: function (name) {
     let files = {
-      'opencv_js.wasm': 'opencv_js.wasm'
+      'opencv_js.wasm': './assets/opencv_js.wasm'
     };
     return files[name];
   },
