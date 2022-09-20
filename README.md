@@ -4,7 +4,9 @@
 
 ## 启动
 使用http-server或nginx启动均可
-    http-server
+```
+http-server src/
+```
 
 ## opencv wasm版本编译
 1. 获取emsdk

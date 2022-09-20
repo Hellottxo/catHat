@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Document</title>
+  <style>
+    html,
+    body {
+      margin: 0;
+      height: 100%;
+      width: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    body {
+      flex-direction: column;
+    }
+
+
+    video {
+      display: none;
+    }
+
+    video, canvas {
+      border: none;
+      width: 600px;
+      height: 400px;
+      background-color: #312f37;
+    }
+
+    button {
+      height: 40px;
+      width: 80px;
+      background: #ff2121c9;
+      border: none;
+      color: white;
+      font-size: 16px;
+      margin-bottom: 12px;
+      cursor: pointer;
+    }
+
+    .layout {
+      display: flex;
+      flex-direction: column;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="layout">
+    <button id="start">start</button>
+    <video width="600" height="400" id="videoInput" ></video>
+    <canvas id="canvasOutput"></canvas>
+  </div>
+  <script src="https://webrtchacks.github.io/adapter/adapter-latest.js"></script>
+  <script src="index.js"></script>
+  <script async src="../assets/opencv.js"></script>
+</body>
+
+</html>
